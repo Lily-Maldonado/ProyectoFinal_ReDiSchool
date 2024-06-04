@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather & Clothing Suggestions</title>
+
+    <link rel="stylesheet" href="styles2.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body class="bodyForWeather">
+    <div class="weather-container">
+      <h1 class="weather-title">Weather & Clothing Suggestions</h1>
+
+      <h2>1. Select your city</h2>
+
+      <input type="text" id="city-input" placeholder="Enter city name" />
+
+      <button id="fetch-weather-button">Fetch Weather</button>
+
+      <h2>2. Check the weather and prepare accordingly</h2>
+
+      <div id="weather-description">
+        <i id="weather-icon" class="fas"></i>
+
+        <span id="weather-text"></span>
+      </div>
+      <div id="temperature"></div>
+
+      <div id="season">
+        <i id="season-icon" class="fas"></i>
+
+        <span id="season-text"></span>
+      </div>
+      <div id="suggestion">
+        <span id="suggestion-text"></span>
+        <img
+          id="suggestion-image"
+          class="suggestion-image"
+          alt="Clothing Suggestion"
+        />
+      </div>
+
+      <h2>3. Find some inspiration at</h2>
+
+      <div class="fashion-links">
+        <a href="https://www.whowhatwear.com/fashion/trends" target="_blank"
+          >Who What Wear - Fashion Trends</a
+        >
+
+        <a href="https://www.instyle.com/fashion/seasonal" target="_blank"
+          >InStyle - Seasonal Fashion</a
+        >
+      </div>
+      <button id="refresh-button">Refresh</button>
+    </div>
+
+    <button id="backHomeButton">Back Home</button>
+
+    <script src="script2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script defer src="script3.js"></script>
+  </head>
+  <body>
+    <h1>To do list</h1>
+    <div class="container">
+      <div class="column">
+        <h2>Home</h2>
+        <form id="home-todo-form">
+          <input
+            type="text"
+            id="home-todo-input"
+            placeholder="Add a home task..."
+          />
+          <button type="submit">Add</button>
+        </form>
+        <ul id="home-todo-list"></ul>
+      </div>
+      <div class="column">
+        <h2>Work</h2>
+        <form id="work-todo-form">
+          <input
+            type="text"
+            id="work-todo-input"
+            placeholder="Add a work task..."
+          />
+          <button type="submit">Add</button>
+        </form>
+        <ul id="work-todo-list"></ul>
+      </div>
+    </div>
+    <button id="back-home-button">Back Home</button>
+  </body>
+</html>

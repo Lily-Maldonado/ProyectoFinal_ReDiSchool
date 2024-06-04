@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lily's Breathing Trainer</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bodyForMEditation">
+    <div class="container">
+      <h1>Breathing Trainer for Meditation</h1>
+      <div id="hover-container">
+        <span id="hover-text"><u>Instructions</u></span>
+        <div id="speech-bubble" class="rounded">
+          <p class="bubble-paragraph">
+            <strong>
+              Welcome to this meditation session. I'm glad to help you get
+              involved in this path. After you choose a background sound, you
+              can select the time that you would like to meditate. Once you
+              select the time by pressing the button, the timer will start to
+              run and give you 12 seconds to adopt a comfortable posture that
+              allows you to focus on the breathing cycle. The first bell sound
+              will indicate you to inhale for 4 seconds. When the second bell
+              rings, hold your breath for 4 seconds, and when the drum sounds,
+              exhale slowly in 4 seconds. Remember to take deep and slow breaths
+              and feel and listen to yourself while you inhale and exhale
+              through your nose. When your mind wanders, slowly return your
+              attention to your breathing. GOOD LUCK!</strong
+            >
+          </p>
+        </div>
+      </div>
+      <h3>1. Select background music</h3>
+
+      <div class="icon-buttons">
+        <button class="icon-button" id="wavesButton">
+          <i class="fas fa-water"></i>
+        </button>
+
+        <button class="icon-button" id="rainButton">
+          <i class="fas fa-cloud-rain"></i>
+        </button>
+
+        <button class="icon-button" id="forestButton">
+          <i class="fas fa-tree"></i>
+        </button>
+
+        <button class="icon-button" id="silentButton">
+          <i class="fas fa-volume-mute"></i>
+        </button>
+      </div>
+
+      <div class="cycles-display">
+        <h3>2. Select duration</h3>
+        <div class="timer-buttons">
+          <button class="timer-button" id="fiveMinutesButton">5 Minutes</button>
+          <button class="timer-button" id="tenMinutesButton">10 Minutes</button>
+          <button class="timer-button" id="fifteenMinutesButton">
+            15 Minutes
+          </button>
+        </div>
+        <div id="countdown">Time left: 00:00</div>
+        <span id="cycleCounter">Cycles: 0</span>
+        <button id="resetButton">Reset</button>
+      </div>
+      <h3>3. Start meditating</h3>
+      <img src="imagenes/monk.JPG" alt="Monk Image" class="monk-image" />
+      <button id="homeButton" class="button">Back Home</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

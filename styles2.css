@@ -1,0 +1,101 @@
+/*Style for weather suggestion clothes*/
+body.bodyForWeather {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("imagenes/background2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.weather-container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Aumentar la opacidad para mejor contraste */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+  flex-grow: 1;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.weather-title {
+  margin-top: 0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#backHomeButton {
+  background-color: #f44336;
+  display: block;
+  position: absolute;
+  margin-top: 95px;
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+#backHomeButton:hover {
+  background-color: #d32f2f;
+}
+
+.fashion-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.fashion-links a {
+  display: block;
+  margin: 5px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.fashion-links a:hover {
+  text-decoration: underline;
+}
+
+#weather-description,
+#temperature,
+#season,
+#suggestion {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#weather-description i,
+#season i {
+  margin-right: 10px;
+}
+.suggestion-image {
+  display: none; /* Se muestra cuando se selecciona una imagen */
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
