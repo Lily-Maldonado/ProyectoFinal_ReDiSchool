@@ -16,12 +16,7 @@ body.bodyForWeather {
 }
 
 .weather-container {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.9
-  ); /* Aumentar la opacidad para mejor contraste */
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 10px;
   margin: 50px auto;
@@ -90,12 +85,4 @@ button:hover {
 #weather-description i,
 #season i {
   margin-right: 10px;
-}
-.suggestion-image {
-  display: none; /* Se muestra cuando se selecciona una imagen */
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-  border: 2px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

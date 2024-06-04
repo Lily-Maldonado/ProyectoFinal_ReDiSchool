@@ -89,8 +89,7 @@ function setSeasonIcon(season) {
       break;
   }
 }
-
-/*Suggest an imagen*/
+/*Unfortunately I couldn't get this section to work, so I preferred to skip it for this occasion but I will keep trying until it works and achieves the goal, which is to show suggestion images
 function updateSuggestionImage(keywords) {
   const image = document.getElementById("suggestion-image");
   const keywordToImageMap = {
@@ -123,6 +122,7 @@ function updateSuggestionImage(keywords) {
     debugMessage.textContent = "No image selected";
   }
 }
+*/
 async function updateWeather(city) {
   const weather = await getWeather(city);
   if (!weather) {
